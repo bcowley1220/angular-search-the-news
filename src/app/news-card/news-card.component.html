@@ -1,0 +1,4 @@
+<h1>Search Top Stories </h1>
+<app-search-form (search)='checkingEvent($event)'></app-search-form>
+<h2>{{newsStories}} Headlines</h2>
+<app-card-container [articles]='articles'></app-card-container>

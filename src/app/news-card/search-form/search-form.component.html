@@ -1,0 +1,6 @@
+  <form class='searchWrapper' (ngSubmit)="userSearch()">
+      <label for="newsSearch">
+        <input id='newsSearch' type="text" name='newsStories' placeholder="Coronavirus" [formControl]='newsSearch'>
+      </label>
+      <button type="submit" >Search</button>
+  </form>

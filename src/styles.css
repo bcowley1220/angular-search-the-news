@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #333;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  overflow: auto;
+}
+
+label {
+  font-size: .85em;
+}
+a {
+  text-decoration: none;
+}
+
+app-card-container {
+  display: flex;
+  padding: .75em;
+  height: 100vh;
+  max-width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.searchWrapper,
+.searchWrapper>label {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 1em;
+}
+
+h2 {
+  text-transform: capitalize;
+}
+
+#newsSearch {
+  padding: .5em;
+  border-radius: 4px;
+  border: solid 1px lightgray;
+  margin-bottom: 1em;
+}
+
+button {
+  padding: .5em;
+  width: 5em;
+  border-radius: 4px;
+  border: unset;
+  background: lightblue;
+  transition: background .5s ease, color .25s ease;
+}
+
+button:hover {
+  background: darkslateblue;
+  color: #fff;
+}
